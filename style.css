@@ -1,0 +1,219 @@
+:root {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.section h3 {
+    color: rgb(182, 131, 36);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+}
+
+.background {
+    height: 100vh;
+    display: block;
+    left: 0;
+    right: 0;
+    background-image: url(torontoskyline2k.jpg);
+    filter: blur(3px);
+    transition: 2s;
+}
+
+.section {
+    position: relative;
+    text-align: center;
+    margin-left: 5rem;
+    height:100vh;
+}
+
+.background[data-scroll="in"] {
+    filter: blur(0);
+}
+
+.page .head {
+    width:fit-content;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+}
+
+@keyframes slider {
+    0% {transform:translateX(-10%) scaleX(0.1);}
+    50% {transform: translateX(90%) scaleX(0.1);}
+}
+
+.line {
+    position: relative;
+    right: 45%;
+    width:100%;
+    transform:translateX(70%) scaleX(0.5);
+    font-size: 0.2rem;
+    background-color: white;
+    margin-bottom: 4rem;
+    transition: 2s
+}
+
+.line[data-scroll="in"] {
+    animation-name: slider;
+    animation-duration: 1s;
+}
+
+.page .info {
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+.section .key {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+}
+
+.section .key h1 {
+    color: rgba(112, 109, 109, 0.555);
+    padding-bottom: 5rem;
+    display: inline-block;
+}
+
+#word1 {
+    position: relative;
+    bottom: 40px;
+    opacity: 0;
+}
+
+#word1[data-scroll="in"] {
+    opacity:1;
+    transition: 1.2s ease;
+    transform: translateY(40px);
+}
+
+#word2 {
+    position: relative;
+    bottom: 40px;
+    opacity: 0;
+}
+
+#word2[data-scroll="in"] {
+    opacity:1;
+    transform: translateY(40px);
+    transition: 1.2s ease;
+    transition-delay: 200ms;
+}
+
+#word3 {
+    position: relative;
+    bottom: 40px;
+    opacity: 0;
+}
+
+#word3[data-scroll="in"] {
+    opacity:1;
+    transform: translateY(40px);
+    transition: 1.2s ease;
+    transition-delay: 400ms;
+}
+
+.page {
+    background-color: #383838;
+    justify-content: center;
+    margin-left: 5rem;
+    padding: 0rem 5rem;
+}
+
+.navigation {
+    background-color: var(--bg-primary);
+    height: 100vh;
+    width: 5rem;
+    position: fixed;
+    z-index: 4;
+    transition: width 200ms ease;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar {
+    list-style-type: none;
+    margin:0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:hover {
+    background-color: var(--bg-secondary);
+}
+
+.navigation:hover {
+    width: 15rem;
+}
+
+.navigation:hover .link-text {
+    display: block;
+}
+
+#seneca {
+    height: 20rem;
+    background-image: url(seneca.jpg);
+    filter: grayscale(60%);
+}
+
+#waterloo {
+    height: 20rem;
+    background-image: url(waterloo\ slc.jpg);
+    filter: grayscale(60%);
+}
+
+p {
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    transition: 0.8s ease;
+}
+
+p[data-scroll="in"] {
+    opacity:1;
+    transform: translateY(-40px);
+}
