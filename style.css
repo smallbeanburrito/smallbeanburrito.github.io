@@ -16,13 +16,13 @@ body {
     margin: 0;
 }
 
-.section h3 {
-    color: rgb(182, 131, 36);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.section p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--text-secondary);
     font-size: 48px;
     position: absolute;
-    top: 15%;
-    left: 45%;
+    top: 35%;
+    left: 40%;
 }
 
 .background {
@@ -30,27 +30,20 @@ body {
     display: block;
     left: 0;
     right: 0;
-    background-image: url(torontoskyline2k.jpg);
-    filter: blur(3px);
-    transition: 2s;
+    background-image: url(1579793.jpg);
 }
 
 .section {
     position: relative;
-    text-align: center;
     margin-left: 5rem;
     height:100vh;
-}
-
-.background[data-scroll="in"] {
-    filter: blur(0);
 }
 
 .page .head {
     width:fit-content;
     padding: 0;
     margin: 0;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 @keyframes slider {
@@ -75,6 +68,7 @@ body {
 }
 
 .page .info {
+    height: 80vh;
     color: white;
     padding-top: 4rem;
     padding-bottom: 10rem;
@@ -134,7 +128,7 @@ body {
     background-color: #383838;
     justify-content: center;
     margin-left: 5rem;
-    padding: 0rem 5rem;
+    padding: 0rem 12rem;
 }
 
 .navigation {
@@ -195,15 +189,20 @@ body {
 }
 
 #seneca {
+    display: flex;
+}
+
+#seneca>img {
+    padding-right: 1rem;
     height: 20rem;
-    background-image: url(seneca.jpg);
-    filter: grayscale(60%);
 }
 
 #waterloo {
+    display: flex;
+}
+
+#waterloo>img {
     height: 20rem;
-    background-image: url(waterloo\ slc.jpg);
-    filter: grayscale(60%);
 }
 
 p {
@@ -216,4 +215,8 @@ p {
 p[data-scroll="in"] {
     opacity:1;
     transform: translateY(-40px);
+}
+
+#mango>img {
+    width: 17rem;
 }
