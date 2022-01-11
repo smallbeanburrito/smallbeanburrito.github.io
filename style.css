@@ -114,8 +114,11 @@ body {
     justify-content: center;
 }
 
+.click {
+    text-decoration: none;
+}
+
 .button {
-    text-decoration:none;
     color: white;
     background-color: var(--bg-primary);
     display: flex;
