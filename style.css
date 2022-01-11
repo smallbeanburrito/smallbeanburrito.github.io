@@ -8,6 +8,19 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .line {
+        transform: translate(70%) scaleX(0.5);
+        right: 45%;
+        width: 100%;
+        }
+        
+        .key>h1 {
+        bottom: 40px;
+        }
+        
+        p {
+        top: 40px
+        }
     :root {
     font-size: 16px;
     }
@@ -24,17 +37,36 @@
     .navbar {
         flex-direction: column;
     }
+    .section {
+        margin-left: 5rem;
+    }
+    .page {
+        margin-left: 5rem;
+        padding: 0rem 12rem;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
+    * {
+		transition-property: none !important;
+		transform: none !important;
+		animation: none !important;
+    }
+    .page {
+        padding: 0rem 6rem;
+    }
     .navigation {
         bottom: 0;
         width: 100vw;
         height: 5rem;
         }
-        .navbar {
+    .navbar {
             flex-direction: row;
         }
+    .line {
+        width: 45%;
+        left: 55%;
+    }
     #seneca>img {
         display:none;
     }
@@ -75,7 +107,6 @@ body {
 .section {
     background-image: url(1579793.jpg);
     position: relative;
-    margin-left: 5rem;
     height:100vh;
     display: flex;
     flex-direction: column;
@@ -117,9 +148,6 @@ body {
 
 .line {
     position: relative;
-    right: 45%;
-    width:100%;
-    transform:translateX(70%) scaleX(0.5);
     font-size: 0.2rem;
     background-color: white;
     margin-bottom: 4rem;
@@ -145,7 +173,6 @@ body {
 
 #word1 {
     position: relative;
-    bottom: 40px;
     opacity: 0;
 }
 
@@ -157,7 +184,6 @@ body {
 
 #word2 {
     position: relative;
-    bottom: 40px;
     opacity: 0;
 }
 
@@ -170,7 +196,6 @@ body {
 
 #word3 {
     position: relative;
-    bottom: 40px;
     opacity: 0;
 }
 
@@ -188,8 +213,7 @@ body {
 
 .page {
     justify-content: center;
-    margin-left: 5rem;
-    padding: 0rem 12rem;
+    margin: 0;
 }
 
 .navigation {
@@ -218,6 +242,7 @@ body {
 }
 
 .nav-link svg {
+    width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
 }
@@ -258,7 +283,6 @@ body {
 
 p {
     position: relative;
-    top: 40px;
     opacity: 0;
     transition: 0.8s ease;
 }
