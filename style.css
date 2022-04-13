@@ -41,11 +41,9 @@
     .navbar {
             flex-direction: row;
         }
-    #seneca>img {
-        display:none;
-    }
-    #waterloo>img {
-        display:none;
+    #content {
+        margin: auto;
+        max-width: 95vw;
     }
 }
 
