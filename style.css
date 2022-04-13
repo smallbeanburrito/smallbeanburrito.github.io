@@ -47,7 +47,7 @@
             width: 100vw;
         }
     #content {
-        margin: auto;
+        margin: 0;
         width: 95vw;
     }
     .intro {
