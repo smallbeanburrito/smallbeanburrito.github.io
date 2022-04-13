@@ -40,11 +40,18 @@
         }
     .navbar {
             flex-direction: row;
+            width: 100vw;
         }
     #content {
         margin: auto;
         max-width: 95vw;
     }
+    .intro {
+        display: flex;
+        align-content: center;
+        gap: 1rem;
+    }
+    
 }
 
 #content {
