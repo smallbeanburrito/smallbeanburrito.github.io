@@ -55,18 +55,33 @@
                 <span class="link-text">Interests</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="#Contact" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 288h-64C163.8 288 128 323.8 128 368C128 376.8 135.2 384 144 384h192c8.836 0 
+                        16-7.164 16-16C352 323.8 316.2 288 272 288zM240 256c35.35 0 64-28.65 64-64s-28.65-64-64-64c-35.34 0-64 28.65-64 64S204.7 256 240 256zM496 320H480v96h16c8.836
+                         0 16-7.164 16-16v-64C512 327.2 504.8 320 496 320zM496 64H480v96h16C504.8 160 512 152.8 512 144v-64C512 71.16 504.8 64 496 64zM496 192H480v96h16C504.8 288 512 
+                         280.8 512 272v-64C512 199.2 504.8 192 496 192zM384 0H96C60.65 0 32 28.65 32 64v384c0 35.35 28.65 64 64 64h288c35.35 0 64-28.65 64-64V64C448 28.65 419.3 0 384 
+                         0zM400 448c0 8.836-7.164 16-16 16H96c-8.836 0-16-7.164-16-16V64c0-8.838 7.164-16 16-16h288c8.836 0 16 7.162 16 16V448z"/></svg>
+                         <span class="link-text">Contact</span>
+                </a>
+            </li>
         </ul>
     </nav>
-    <div id="container">
+    <div id="content">
         <div class="section">
-                    <p>Hello, I'm Keith Cao</p>
-                <div class="key">
-                    <h1 id="word1">DRIVEN.</h1>
-                    <h1 id="word2">ADAPTIVE.</h1>
-                    <h1 id="word3">PROGRESSIVE.</h1>
+                <p>Hello, I'm Keith Cao</p>
+                <p>Full stack developer</p>
+                <div class="intro">
+                    <img src="meandmango.jpg" alt="Me with my cat Mango"> 
+                    <div id="basic">
+                        <p> Date:   April 12, 2022</p>
+                        <p> Course:         WEB222</p>
+                        <p> Section:           NII</p>
+                        <p> Professor: Mark Meritt</p>
+                    </div>
                 </div>
-                <a class="click" href="#About me">
-                <div class="button">Learn More</div>
+                <a href="RESUME MAR 2022.pdf" download>
+                <div class="button">Resume</div>
                 </a>
         </div>
     <div class="page">
@@ -74,11 +89,7 @@
             <div class="info">
                     <h4 class ="head">
                         About me
-                        <div class="underline">
-                            <h4 class="line">s</h4>
-                        </div>
                     </h4>
-
                 <p>
                     I am a computer science student eager to explore the different fields of the tech industry, starting with web development.
                     I am currently studying <a class="school" href="https://www.senecacollege.ca/programs/fulltime/CPA.html">Computer Programming and Analysis</a>
@@ -89,17 +100,14 @@
                     now I feel prepared for whatever life has to throw at me.
                 </p>
             </div>
+            <hr>
         </a>
             <a name="Education">
                 <div class="info">
                         <h4 class="head">
                             Education
-                            <div class="underline">
-                                <h4 class="line">s</h4>
-                            </div>
                         </h4>
                     <div id="seneca">
-                        <img src="seneca.jpg" alt="Seneca">
                         <p>
                             <b>Computer Programming and Analysis,</b><i> Seneca College</i>
                             <br><br>
@@ -121,17 +129,14 @@
                             on quantifying the properties of a reation, such as energy released or rate of reactions. Alongside these courses, I took two analytical labs that focused on precision
                             and accuracy (theoretical vs experimental yield) as well as two organic chemistry labs which focused on anticipating side reactions and how it will affect the yield.
                         </p>
-                        <img src="waterloo slc.jpg" alt="Waterloo">
                     </div>
                 </div>
+                <hr>
             </a>
         <a name="Projects">
             <div class="info">
                     <h4 class="head">
                         Projects
-                        <div class="underline">
-                            <h4 class="line">s</h4>
-                        </div>
                     </h4>
                 <p>
                     <b>Accounting Ticketing System</b>
@@ -140,15 +145,21 @@
                     open, close, create, and display ticket messages, as well as, add new customer or agent accounts. Records of tickets and accounts are loaded from a text file and changes made during
                     the session are saved by overwriting the old text file. 
                 </p>
+                <br><br>
+                <p>
+                    <b>Shipping Handling System</b>
+                    <br><br>
+                    Created a program in C++ that managed items that needed to be shipped. Each item was an object of a class containing the quantity on hand, quantity needed, description, and expiry date. Accessing
+                    the program allowed for users to view the items, update quantity of items, remove items, sort the items, and display detailed descriptions of each item. The record of items can are loaded
+                    from an external file and on exit will automatically remove items that are ready to be shipped from the records and generate a summary of the shipped items.
+                </p>
             </div>
+            <hr>
             </a>
             <a name="Interests">
                 <div class="info">
                     <h4 class="head">
                         Interests
-                        <div class="underline">
-                            <h4 class="line">s</h4>
-                        </div>
                     </h4>
                     <p>
                         I have a beautiful scottish fold named Mango and I spend most of my free time with her. Although I stopped taking piano lessons due to school, I play leisurely and would like 
@@ -162,14 +173,64 @@
                         <img src="mango/mango5.jpg" alt="Mango in Bag">
                     </div>
                 </div>
+                <hr>
+            </a>
+            <a name="Contact">
+                <div class="info">
+                    <h4 class="head">
+                        Contact Me
+                    </h4>
+                <form id="contactform" action="https://httpbin.org/post" method="POST">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" size="25" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" size="25" required>
+                    <br>
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" name="phone" size="12" maxlength="12" pattern="\d{3}[\s-]*\d{3}[\s-]*\d{3}" placeholder="123-456-7897" required>
+                    <br>
+                    <label for="address">Address</label>
+                    <input id="address" type="text" name="address" size="25" required>
+                    <br>
+                    <label for="city">City</label>
+                    <input id="city" type="text" name="city" list="cities" size="25" required>
+                    <datalist id="cities">
+                        <option value="Scarborough"></option>
+                        <option value="Markham"></option>
+                        <option value="Vaughn"></option>
+                        <option value="Brampton"></option>
+                        <option value="Toronto"></option>
+                    </datalist>
+                    <br>
+                    <label for="postal">Postal Code</label>
+                    <input id="postal" type="text" name="text" size="7" maxlength="7" pattern="[a-zA-Z]\d[a-zA-Z]\s*\d[a-zA-Z]\d">
+                    <br>
+                    <label for="question">Question</label>
+                    <input id="question" type="radio" name="purpose" size="25" value="question" required>
+                    <br>
+                    <label for="comment">Comment</label>
+                    <input id="comment" type="radio" name="purpose" size="25" value="comment" required>
+                    <br>
+                    <label for="hiring">Hiring</label>
+                    <input id="hiring" type="radio" name="purpose" value="hiring" size="25" required>
+                    <br>
+                    <div id="salary">
+                        <label for="rate">Hourly Rate</label>
+                        <input id="rate" type="number" name="purpose" size="25" >
+                        <br>
+                    </div>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea id="message" name="message" rows="6" cols="25" required>
+                    </textarea>
+                    <br>
+                    <input value="Submit" name="button" type="submit">
+                </form>
+                </div>
             </a>
     </div>
 </div>
-<script src="scroll-out.js"></script>
-<script type="text/javascript">
-    ScrollOut({
-        targets: 'h1, h4, p, div'
-    })
-</script>
+<script src="./app.js"></script>
 </body>
 </html>
