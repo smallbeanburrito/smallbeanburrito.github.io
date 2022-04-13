@@ -44,7 +44,7 @@
         }
     #content {
         margin: auto;
-        max-width: 95vw;
+        width: 95vw;
     }
     .intro {
         gap: 1rem;
