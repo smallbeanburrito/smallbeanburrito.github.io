@@ -50,6 +50,9 @@
         margin: 0;
         width: 95vw;
     }
+    .page {
+        padding: 0;
+    }
     .intro {
         gap: 1rem;
     }
