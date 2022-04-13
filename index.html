@@ -88,7 +88,7 @@
         <a name="About me">
             <div class="info">
                     <h4 class ="head">
-                        About me
+                        About me and Academic Honesty
                     </h4>
                 <p>
                     I am a computer science student eager to explore the different fields of the tech industry, starting with web development.
@@ -98,6 +98,10 @@
                     the latter field. I switched my major to a 3-year General Science program, graduated later that term, then applied to start college 
                     the following term. While this was a scary leap for me, it was the best decision I have ever made. This was the biggest life choice of mine thus far and 
                     now I feel prepared for whatever life has to throw at me.
+                    <br>
+                    I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or 
+                    electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this 
+                    assessment for my use. I also declare that no part of this assignment has been distributed to other students.
                 </p>
             </div>
             <hr>
@@ -188,7 +192,7 @@
                     <input id="email" type="email" name="email" size="25" required>
                     <br>
                     <label for="phone">Phone number</label>
-                    <input id="phone" type="tel" name="phone" size="12" maxlength="12" pattern="\d{3}[\s-]*\d{3}[\s-]*\d{3}" placeholder="123-456-7897" required>
+                    <input id="phone" type="tel" name="phone" size="12" maxlength="12" pattern="\d{3}(\s|-)*\d{3}(\s|-)*\d{4}" placeholder="123-456-7897" required>
                     <br>
                     <label for="address">Address</label>
                     <input id="address" type="text" name="address" size="25" required>
@@ -217,13 +221,12 @@
                     <br>
                     <div id="salary">
                         <label for="rate">Hourly Rate</label>
-                        <input id="rate" type="number" name="purpose" size="25" >
+                        <input id="rate" type="number" name="rate" size="25" >
                         <br>
                     </div>
                     <label for="message">Message</label>
                     <br>
-                    <textarea id="message" name="message" rows="6" cols="25" required>
-                    </textarea>
+                    <textarea id="message" name="message" rows="6" cols="25" required></textarea>
                     <br>
                     <input value="Submit" name="button" type="submit">
                 </form>
